@@ -1,0 +1,51 @@
+.header {
+    height: 100px;
+    background-color: #00bf63;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+position: relative;
+
+    .logo {
+        margin-top: 30px;
+        text-align: center;
+        width: 70%;
+        position: relative;
+        letter-spacing: 3px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Balthazar';
+        font-size: 2.5em;
+    }
+    .cart-button{
+    right: 10px;
+    cursor: pointer;
+        bottom: 10px;
+        position: absolute;
+        letter-spacing: 3px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+
+    }
+    .signin-icon{
+        position: absolute;
+        left: 10px;
+        top: 30px;
+        text-align: center;
+        height: 45px;
+        width: 45px;
+        background-color: #bbb;
+        border-radius: 50%;
+        font-size: 1.9em;
+     
+    }
+    .sign-in{
+        position: absolute;
+        left: 10px;
+        top: 30px;
+      color: white;
+        font-size: 1.9em;
+    }
+
+}

@@ -1,0 +1,13 @@
+<div class="container" [class.selected]="isSelected" (click)="onClick()">
+    <div class="header">{{address?.name}}</div>
+    <div class="detail-adress">
+        {{address?.detail}}
+    </div>
+    <div class="landmark">
+        {{address?.landmark}}
+
+    </div><div class="landmark">
+        {{address?.zipcode}}
+
+    </div>
+</div>

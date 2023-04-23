@@ -1,0 +1,79 @@
+.container {
+    width: 100%;
+    height: 100vh;
+
+    .back-button {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-family: 'Sigmar';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: #00bf63;
+        font-display: swap;
+    }
+
+    .address-container {
+        left: 500px;
+        top: 120px;
+        position: absolute;
+        height: 550px;
+
+        background-color: #00bf63;
+        text-align: center;
+
+        .title {
+            margin: 30px;
+
+            position: relative;
+            top: 10px;
+            font-size: 2.4em;
+            color: white;
+            font-weight: bold;
+        }
+
+        .address-list {
+            margin: 30px;
+            // margin-top: 30px;
+            position: relative;
+            // width: 100%;
+            overflow: scroll;
+            height: 390px;
+            // left: 5%;
+            text-align: left;
+            // align-self: 
+        }
+
+        .button-container {
+            width: 100%;
+            height: 20px;
+            position: relative;
+
+            button {
+                font-size: 1.0em;
+                position: absolute;
+                right: 10px;
+                bottom: 3px;
+                border: 1px solid white;
+                border-radius: 20px;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+              
+           
+                font-weight: bold;
+                box-shadow: 2px 3px gray    ;
+            }
+        }
+
+    }
+}
+.selected{
+    box-shadow: 2px 3px 10px white;
+     
+   
+}
+::-webkit-scrollbar {
+    display: none;
+}

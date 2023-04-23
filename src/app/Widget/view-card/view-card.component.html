@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="quandity" *ngIf="cartView">Qty:{{quantity}}</div>
+    <div class="image-card">
+        <img [src]="product?.imageUrl" alt="potato">
+    </div>
+
+    <div class="detail">
+        <div class="name">{{product?.name}}</div>
+        <div class="rate">{{product?.rate}}</div>
+    </div>
+    <button class="add-cart" (click)="addOrRemove()" >{{cartView?'Remove':'ADD'}}</button>
+</div>

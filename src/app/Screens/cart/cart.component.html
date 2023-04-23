@@ -1,0 +1,61 @@
+<div class="main">
+  <div class="cart-container">
+    <div class="left">
+      <div class="empty" *ngIf="isCartEmpty()"><p>The Cart is Empty </p></div>
+      <app-view-card *ngFor="let cartProduct of covertToItemWithQuant()"
+        [itemWithQuantity]="cartProduct" [cartView]="true"></app-view-card>
+    </div>
+    <div class="right">
+      <div class="address-title">Choose Delivery Address</div>
+      <div class="address">
+        <app-address-view  *ngFor="let address of addressList ;let i =index"  [address]="address" [index]="i" (onSelect)="onSelect($event)" [isSelected]="i==selectedIndex"> </app-address-view>
+       
+
+      </div>
+      <!-- <div class="container">
+        <div class="header">Home</div>
+        <div class="detail-adress">
+          KattayatuParmb chelavoor(p.o) calicut
+        </div>
+        <div class="landmark">
+          Kt 9 post number
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <div class="footer">
+    <div class="total-amount">Total Payable Amount:{{calcTotalAmount()}}</div>
+          <div class="button-holder" *ngIf="!isCartEmpty()">
+              <button (click)="navigateTo()" >Check Out</button>
+          </div>
+  </div>
+</div>
+
+
+<!-- <div class="main">
+  <div class="cart-container">
+  <div class="left">
+    <div class="empty" *ngIf="isCartEmpty()"><p>The Cart is Empty </p></div>
+    <app-view-card *ngFor="let cartProduct of covertToItemWithQuant()" [itemWithQuantity]="cartProduct"  [cartView]="true"></app-view-card> 
+  
+      </div>
+      <div class="right">
+        <div class="container">
+          <div class="header">Home</div>
+          <div class="detail-adress">
+              KattayatuParmb chelavoor(p.o) calicut
+          </div>
+          <div class="landmark">
+              Kt 9 post number
+          </div>
+      </div>
+       </div>
+      </div>
+      <div class="footer">
+          <div class="total-amount">Total Payable Amount:{{calcTotalAmount()}}</div>
+          <div class="button-holder" *ngIf="!isCartEmpty()">
+              <button (click)="navigateTo()" >Check Out</button>
+          </div>
+  </div>
+
+    </div> -->

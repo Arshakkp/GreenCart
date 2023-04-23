@@ -1,0 +1,13 @@
+<div class="header">
+    <div class="logo">GREEN CART</div>
+    <div class="cart-button" (click)="navigateTo()">
+       {{ isHome?'Cart(0)':'Home'}}
+    </div>
+    <div class="signin-icon" *ngIf="isLogged ;  else signButton">
+    {{userDetail.name[0]}}
+    </div>
+    <ng-template #signButton>
+        <div class="sign-in">Log-In</div>
+    </ng-template>
+
+</div>

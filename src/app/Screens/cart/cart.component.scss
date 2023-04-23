@@ -1,0 +1,68 @@
+.main {
+    .cart-container {
+        display: flex;
+        position: relative;
+        height: calc(100vh - 150px);
+
+        .left {
+            position: relative;
+            width: 70%;
+            display: grid;
+            overflow: scroll;
+            grid-template-columns: auto auto auto auto;
+            grid-row: auto auto auto auto;
+
+            .empty {
+                text-align: center;
+                font-size: 2.5em;
+                color: black;
+                margin-top: 50px;
+            }
+        }
+
+        .right {
+            position: relative;
+            width: 30%;
+            border-left: 2px solid green;
+            height: 100%;
+
+            .address-title {
+                height: 40px;
+                margin: 5px;
+                font-size: 2.0em;
+            }
+
+            .address {
+                overflow: scroll;
+                height: calc(100% - 100px);
+                padding: 15px;
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        background-color: #00bf63;
+        display: flex;
+        justify-content: space-between;
+
+        .total-amount {
+            font-size: 2.0em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .button-holder {
+            button {
+                margin: 5px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

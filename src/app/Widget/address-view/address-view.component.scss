@@ -1,0 +1,20 @@
+.container{
+    margin-top: 10px;
+    position:relative;
+    width: calc(90% - 20px);
+    background-color: white;
+ padding: 10px;
+ border: 5px solid #99edc3;
+
+    .header{
+        font-size: 2.0em;
+        width: 100%;
+        align-items: start;
+        justify-content: left;
+
+    }
+}
+.selected{
+ border: 5px solid #123524;
+    
+}

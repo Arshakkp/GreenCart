@@ -8,7 +8,7 @@ import { HelperService } from 'src/app/Services/helper.service';
 })
 export class LandingPageComponent {
   constructor(private helper:HelperService){}
-navigateTo(toWhere:'login'){
+navigateTo(toWhere:'login'|'main'){
 this.helper.navigateTo(toWhere);
 }
 }

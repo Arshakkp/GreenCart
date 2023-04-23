@@ -7,22 +7,28 @@
     <div class="login-container">
         <div class="login-input-container">
             <div class="login-caption">
-                Log in and let's <br>make grocery shopping a breeze.
+                {{isLoginView?"Log in and let's make grocery shopping a breeze.":"Join us and never step foot in a grocery store again!"}}
             </div>
             <div class="login-input">
                 <label for="username">Username</label><br>
                 <input type="text" name="username">
             </div>
             <div class="login-input">
-                <label for="username">Username</label><br>
-                <input type="text" name="username">
+                <label for="password">Password</label><br>
+                <input type="password" name="password">
             </div>
-            <div class="sign-up">
-                <a href="https://codepen.io/jh3y/pen/GRpMZZG">Sign-Up</a>
+            <div class="login-input" *ngIf="isLoginView">
+                <label for="password">Re-Enter Password</label><br>
+                <input type="password" name="password">
+            </div>
+            <div class="sign-up-container" (click)="toggleLoginView()">
+                <div class="sign-up">
+                <a>{{isLoginView?'Sign-Up':'Log-in'}}</a>
+                </div>
             </div>
             <div class="button-container">
                 <button>
-                    Login
+                   {{ isLoginView?'Login':'Sign-In'}}
                 </button>
             </div>
         </div>
